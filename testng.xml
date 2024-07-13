@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <listeners>
+        <listener class-name="ReportUtility.ExtentReportUtil"/>
+    </listeners>
+ <!--<test name="TestWalibo_001">
+    <parameter name="Url" value="https://app.woliba.io/user"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="TestScripts.TC_Walibo_Login_and_HomePage"/>
+    </classes>
+  </test>-->
+  <test name="TestWalibo_002">
+    <parameter name="Url" value="https://app.woliba.io/user"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="TestScripts.TC_Walibo_LeaderBoard"/>
+    </classes>
+  </test>
+</suite>

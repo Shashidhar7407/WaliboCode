@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-13T11:52:02 IST" name="Suite" finished-at="2024-07-13T11:52:32 IST" duration-ms="30141">
+    <groups>
+    </groups>
+    <test started-at="2024-07-13T11:52:02 IST" name="TestWalibo_002" finished-at="2024-07-13T11:52:32 IST" duration-ms="30141">
+      <class name="TestScripts.TC_Walibo_LeaderBoard">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:TestScripts.TC_Walibo_LeaderBoard@14028087]" started-at="2024-07-13T11:52:02 IST" name="setUp" finished-at="2024-07-13T11:52:09 IST" duration-ms="6706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51d387d3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login_With_User()[pri:0, instance:TestScripts.TC_Walibo_LeaderBoard@14028087]" started-at="2024-07-13T11:52:09 IST" name="Login_With_User" finished-at="2024-07-13T11:52:21 IST" duration-ms="11445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_With_User -->
+        <test-method signature="WaliboLeaderBoard()[pri:0, instance:TestScripts.TC_Walibo_LeaderBoard@14028087]" started-at="2024-07-13T11:52:21 IST" name="WaliboLeaderBoard" finished-at="2024-07-13T11:52:31 IST" depends-on-methods="TestScripts.TC_Walibo_Login_and_HomePage.Login_With_User" duration-ms="10803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WaliboLeaderBoard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.TC_Walibo_LeaderBoard@14028087]" started-at="2024-07-13T11:52:31 IST" name="tearDown" finished-at="2024-07-13T11:52:32 IST" duration-ms="902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestScripts.TC_Walibo_LeaderBoard -->
+    </test> <!-- TestWalibo_002 -->
+  </suite> <!-- Suite -->
+</testng-results>
