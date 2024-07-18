@@ -8,14 +8,14 @@
     <parameter name="Url" value="https://app.woliba.io/user"/>
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="TestScripts.TC_Walibo_LeaderBoard">
+      <class name="TestScripts.TC_Woliba_Events">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="WaliboLeaderBoard"/>
+          <include name="WolibaEventsTest"/>
           <include name="Login_With_User"/>
         </methods>
-      </class> <!-- TestScripts.TC_Walibo_LeaderBoard -->
+      </class> <!-- TestScripts.TC_Woliba_Events -->
     </classes>
   </test> <!-- TestWalibo_002(failed) -->
 </suite> <!-- Failed suite [Suite] -->

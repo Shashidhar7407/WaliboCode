@@ -17,7 +17,7 @@ public class TC_Walibo_Login_and_HomePage extends TestBase {
     @Test
     public void Login_With_User() throws Exception {
         // Create a new test in the Extent Report
-        ExtentTest test = ExtentReportUtil.extentReports.createTest("Login_With_User");
+        ExtentTest test = ExtentReportUtil.extentReports.createTest("Results of Steps Execution");
         ExtentReportUtil.setTest(test);
 
         try {
@@ -43,6 +43,7 @@ public class TC_Walibo_Login_and_HomePage extends TestBase {
             ExtentReportUtil.log(Status.INFO, "Scrolled to login button");
             wait.until(ExpectedConditions.elementToBeClickable(login_object1.Login_Button())).click();
             ExtentReportUtil.log(Status.INFO, "Clicked on login button");
+            Thread.sleep(5000);
             
             // Wait for the login process to complete
             Thread.sleep(5000);

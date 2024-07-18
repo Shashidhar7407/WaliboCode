@@ -28,6 +28,8 @@ import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.Status;
 
+import PageObjectModel.Challengepage;
+import PageObjectModel.EventsPage;
 import PageObjectModel.LeaderBoardPage;
 import PageObjectModel.LoginPage;
 import ReportUtility.ExtentReportUtil;
@@ -39,6 +41,8 @@ public class TestBase {
     protected LoginPage login_object1;
     protected Properties prop;
     protected LeaderBoardPage Leaderboard_object1;
+    protected Challengepage challengepage;
+    protected EventsPage eventPage;
 
     @BeforeTest
     public void setUp(ITestContext context) throws IOException {
@@ -70,6 +74,8 @@ public class TestBase {
         jsExecutor = (JavascriptExecutor) driver;
         login_object1 = new LoginPage(driver);
         Leaderboard_object1 = new LeaderBoardPage(driver);
+        challengepage=new Challengepage(driver);
+        eventPage=new EventsPage(driver);
 
         // Navigate to the specified URL
         driver.get(Url);

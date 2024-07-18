@@ -10,12 +10,19 @@
     <classes>
       <class name="TestScripts.TC_Walibo_Login_and_HomePage"/>
     </classes>
-  </test>-->
+  </test>
   <test name="TestWalibo_002">
     <parameter name="Url" value="https://app.woliba.io/user"/>
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="TestScripts.TC_Walibo_LeaderBoard"/>
+      <class name="TestScripts.TC_Woliba_Challenges"/>
+    </classes>
+  </test>-->
+    <test name="TestWalibo_002">
+    <parameter name="Url" value="https://app.woliba.io/user"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="TestScripts.TC_Woliba_Events"/>
     </classes>
   </test>
 </suite>

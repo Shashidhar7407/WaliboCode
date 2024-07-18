@@ -21,7 +21,7 @@ public class TC_Walibo_LeaderBoard extends TC_Walibo_Login_and_HomePage {
     @Test(dependsOnMethods = "Login_With_User")
     public void WaliboLeaderBoard() throws InterruptedException {
         // Create a new test in the Extent Report
-        ExtentReportUtil.extentReports.createTest("WaliboLeaderBoard");
+//        ExtentReportUtil.extentReports.createTest("WaliboLeaderBoard");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -60,6 +60,7 @@ public class TC_Walibo_LeaderBoard extends TC_Walibo_Login_and_HomePage {
             // Retrieve and log the points for the current month
             String currentMonth = LeaderBoardPage.getCurrentMonth();
             String xpathCurrentMonth = LeaderBoardPage.generateDynamicXPathForMonth(currentMonth);
+            driver.findElement(By.name("shahsi")).click();
 
             WebElement currentMonthPoints = driver.findElement(By.xpath(xpathCurrentMonth));
             ExtentReportUtil.log(Status.INFO, "Current month points: " + currentMonthPoints.getText());
